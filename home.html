@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vatana Chhorn | Legal</title>
+    <style>
+        :root {
+            color-scheme: light dark;
+            --text: #111;
+            --muted: #5c5c5c;
+            --border: rgba(0, 0, 0, 0.08);
+            --accent: #0071e3;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif;
+            background: #f5f5f7;
+            color: var(--text);
+            line-height: 1.6;
+        }
+        header {
+            padding: 4rem 2rem 2rem;
+            text-align: center;
+        }
+        nav a {
+            color: var(--muted);
+            text-decoration: none;
+            margin: 0 0.75rem;
+            font-weight: 500;
+        }
+        nav a:hover {
+            color: var(--accent);
+        }
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 28px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        h2 {
+            margin-top: 2rem;
+            font-size: 1.4rem;
+        }
+        p {
+            margin: 0.75rem 0;
+            color: var(--muted);
+        }
+        ul {
+            padding-left: 1.5rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            color: var(--muted);
+        }
+        .card {
+            border-top: 1px solid var(--border);
+            padding-top: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #000;
+                color: #f5f5f7;
+            }
+            main {
+                background: #1c1c1e;
+            }
+            p, nav a, footer {
+                color: #ccc;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>Vatana Chhorn · onlyvatana22@gmail.com</p>
+        <h1>Legal &amp; Trust Center</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="privacy-policy.html">Privacy</a>
+            <a href="terms-of-use.html">Terms</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <p>
+                Welcome to the legal hub for Vatana Chhorn’s resume and cover letter tools.
+                This space explains how your information is treated, the rules for using the
+                software, and the commitments I make to keep things transparent and secure.
+            </p>
+        </section>
+        <section class="card">
+            <h2>What You Can Expect</h2>
+            <ul>
+                <li>Clarity on how personal details are handled and stored.</li>
+                <li>Plain-language terms that describe your rights and responsibilities.</li>
+                <li>No server-side data collection—SwiftData keeps everything on your Apple devices.</li>
+                <li>Direct access to me whenever you need clarification.</li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>Quick Links</h2>
+            <p>
+                <a href="privacy-policy.html">Read the Privacy Policy</a> for a breakdown of
+                how SwiftData keeps your resumes on-device without sharing them with me.
+            </p>
+            <p>
+                <a href="terms-of-use.html">Review the Terms of Use</a> to understand
+                acceptable behavior, licensing, and liability limitations.
+            </p>
+        </section>
+        <section class="card">
+            <h2>Need to Reach Out?</h2>
+            <p>
+                Email me directly at <a href="mailto:onlyvatana22@gmail.com">onlyvatana22@gmail.com</a>.
+                I personally handle every request and typically respond within two business days.
+            </p>
+        </section>
+    </main>
+    <footer>
+        © <span id="year"></span> Vatana Chhorn. All rights reserved.
+    </footer>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

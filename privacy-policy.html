@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Vatana Chhorn</title>
+    <style>
+        :root {
+            color-scheme: light dark;
+            --text: #111;
+            --muted: #5c5c5c;
+            --border: rgba(0, 0, 0, 0.08);
+            --accent: #0071e3;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif;
+            background: #f5f5f7;
+            color: var(--text);
+            line-height: 1.6;
+        }
+        header {
+            padding: 4rem 2rem 2rem;
+            text-align: center;
+        }
+        header nav a {
+            margin: 0 0.75rem;
+            color: var(--muted);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        header nav a:hover {
+            color: var(--accent);
+        }
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2.5rem;
+            background: #fff;
+            border-radius: 28px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        }
+        h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+        h2 { margin-top: 2rem; font-size: 1.5rem; }
+        p, li { color: var(--muted); }
+        ul { padding-left: 1.5rem; }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            color: var(--muted);
+        }
+        @media (prefers-color-scheme: dark) {
+            body { background: #000; color: #f5f5f7; }
+            main { background: #1c1c1e; }
+            p, li, header nav a, footer { color: #ccc; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>Vatana Chhorn · onlyvatana22@gmail.com</p>
+        <h1>Privacy Policy</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="terms-of-use.html">Terms</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <p>Last updated: <span id="updated"></span></p>
+            <p>
+                This Privacy Policy explains that the Resume Builder tools do not collect, transmit, or store
+                your resume data on my servers. Everything you create stays within Apple’s SwiftData framework
+                on your own devices.
+            </p>
+        </section>
+        <section>
+            <h2>Information Collected</h2>
+            <ul>
+                <li><strong>Resume content:</strong> stored locally in SwiftData containers on your Apple hardware.</li>
+                <li><strong>Cloud backups (optional):</strong> if you enable iCloud for the app, Apple handles the sync.</li>
+                <li><strong>Support emails:</strong> only the messages you voluntarily send to <a href="mailto:onlyvatana22@gmail.com">onlyvatana22@gmail.com</a>.</li>
+            </ul>
+            <p>I do not run analytics, ad trackers, or remote logging inside the app.</p>
+        </section>
+        <section>
+            <h2>How Your Data Is Used</h2>
+            <p>
+                Your resume data never leaves the SwiftData store unless you export it or sync via Apple services.
+                I only see information you explicitly send in a support request, and I use it solely to reply to you.
+            </p>
+        </section>
+        <section>
+            <h2>Local Storage Powered by SwiftData</h2>
+            <p>
+                SwiftData saves everything directly on-device and leverages Apple’s security features such as
+                data protection and encryption. When iCloud sync is enabled, Apple manages the encrypted transfer
+                and storage. I do not receive a copy of those records.
+            </p>
+        </section>
+        <section>
+            <h2>Retention &amp; Control</h2>
+            <p>
+                You control all resume entries from within the app—delete a record and it disappears immediately
+                from your SwiftData store and any connected Apple sync destinations. I only retain support emails
+                in my inbox for as long as needed to resolve the conversation.
+            </p>
+        </section>
+        <section>
+            <h2>Children’s Privacy</h2>
+            <p>
+                The Resume Builder is not intended for children under 16. I do not knowingly collect personal
+                data from children, and accounts believed to belong to minors will be removed.
+            </p>
+        </section>
+        <section>
+            <h2>Contact</h2>
+            <p>
+                Questions about this Privacy Policy? Email <a href="mailto:onlyvatana22@gmail.com">onlyvatana22@gmail.com</a>.
+                I typically respond within two business days.
+            </p>
+        </section>
+    </main>
+    <footer>
+        © <span id="year"></span> Vatana Chhorn. All rights reserved.
+    </footer>
+    <script>
+        const now = new Date();
+        document.getElementById("updated").textContent = now.toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" });
+        document.getElementById("year").textContent = now.getFullYear();
+    </script>
+</body>
+</html>

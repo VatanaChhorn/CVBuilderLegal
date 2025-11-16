@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Use | Vatana Chhorn</title>
+    <style>
+        :root {
+            color-scheme: light dark;
+            --text: #111;
+            --muted: #5c5c5c;
+            --border: rgba(0, 0, 0, 0.08);
+            --accent: #0071e3;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif;
+            background: #f5f5f7;
+            color: var(--text);
+            line-height: 1.6;
+        }
+        header {
+            padding: 4rem 2rem 2rem;
+            text-align: center;
+        }
+        header nav a {
+            margin: 0 0.75rem;
+            color: var(--muted);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        header nav a:hover {
+            color: var(--accent);
+        }
+        main {
+            max-width: 800px;
+            margin: 0 auto 4rem;
+            padding: 2.5rem;
+            background: #fff;
+            border-radius: 28px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        }
+        h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+        h2 { margin-top: 2rem; font-size: 1.5rem; }
+        p, li { color: var(--muted); }
+        ul { padding-left: 1.5rem; }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            color: var(--muted);
+        }
+        @media (prefers-color-scheme: dark) {
+            body { background: #000; color: #f5f5f7; }
+            main { background: #1c1c1e; }
+            p, li, header nav a, footer { color: #ccc; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>Vatana Chhorn · onlyvatana22@gmail.com</p>
+        <h1>Terms of Use</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="privacy-policy.html">Privacy</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <p>Effective date: <span id="effective"></span></p>
+            <p>
+                These Terms of Use (“Terms”) govern access to the Resume Builder applications, templates,
+                and related services operated by me, Vatana Chhorn. By installing or using the software you
+                agree to these Terms.
+            </p>
+        </section>
+        <section>
+            <h2>License</h2>
+            <p>
+                I provide you with a personal, revocable, non-transferable license to create, edit, and export
+                resumes and cover letters. You may not resell the software, distribute template files publicly,
+                or reverse engineer proprietary components.
+            </p>
+        </section>
+        <section>
+            <h2>User Responsibilities</h2>
+            <ul>
+                <li>Ensure all content you upload is accurate and lawful.</li>
+                <li>Maintain the security of your devices and backups.</li>
+                <li>Use exports solely for personal or professional job applications.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Intellectual Property</h2>
+            <p>
+                All original templates, code, and brand assets remain the intellectual property of Vatana Chhorn.
+                You retain ownership of your resume content. By submitting feedback you grant me the right to use
+                it to improve the product without additional compensation.
+            </p>
+        </section>
+        <section>
+            <h2>Acceptable Use</h2>
+            <p>
+                Do not use the Resume Builder to generate misleading credentials, discriminatory job postings, or
+                content that violates applicable laws. Abuse, attempts to disrupt infrastructure, or unauthorized
+                scraping will result in immediate access termination.
+            </p>
+        </section>
+        <section>
+            <h2>Data Storage &amp; Sync</h2>
+            <p>
+                Your resumes and cover letters stay on your Apple devices inside SwiftData containers. If you enable
+                iCloud sync, Apple is the only party that handles the encrypted transfer and storage. I do not run
+                my own servers for this data and cannot access your documents unless you share them explicitly.
+            </p>
+        </section>
+        <section>
+            <h2>Disclaimer &amp; Liability</h2>
+            <p>
+                The software is provided “as is” without warranties of any kind. I am not responsible for lost job
+                opportunities or indirect damages arising from use. Where the law allows, my aggregate liability is
+                limited to the amount you paid for the service in the past 12 months.
+            </p>
+        </section>
+        <section>
+            <h2>Updates to These Terms</h2>
+            <p>
+                I may update these Terms to reflect new features or legal requirements. When changes are material,
+                you will be notified in-app or via email before the updated Terms take effect.
+            </p>
+        </section>
+        <section>
+            <h2>Contact</h2>
+            <p>
+                For questions about these Terms, email <a href="mailto:onlyvatana22@gmail.com">onlyvatana22@gmail.com</a>.
+                I will respond as soon as possible.
+            </p>
+        </section>
+    </main>
+    <footer>
+        © <span id="year"></span> Vatana Chhorn. All rights reserved.
+    </footer>
+    <script>
+        const today = new Date();
+        document.getElementById("effective").textContent = today.toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" });
+        document.getElementById("year").textContent = today.getFullYear();
+    </script>
+</body>
+</html>
